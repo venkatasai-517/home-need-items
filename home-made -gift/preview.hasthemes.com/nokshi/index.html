@@ -26,6 +26,36 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    <style>
+      .notification-container {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        display: none;
+      }
+
+      .notification-container.show {
+        display: block;
+      }
+
+      .notification-content {
+        display: flex;
+        align-items: center;
+      }
+
+      .notification-message {
+        flex-grow: 1;
+      }
+
+      .notification-cancel {
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
     <div class="wrapper">
@@ -1727,7 +1757,14 @@
         </div>
       </footer>
     </div>
-
+    <div class="notification-container" id="notification">
+      <div class="notification-content">
+        <div class="notification-message"></div>
+        <div class="notification-cancel" onclick="cancelAd()">
+          addtheadd.com ads Click hear Don't Miss The Offers
+        </div>
+      </div>
+    </div>
     <!-- all js here -->
     <script src="assets/js/vendor/jquery-1.12.0.min.js"></script>
     <script src="assets/js/popper.js"></script>
@@ -1740,6 +1777,7 @@
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="../../../js/style.js"></script>
   </body>
 
   <!-- Mirrored from preview.hasthemes.com/nokshi/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 May 2024 05:41:24 GMT -->

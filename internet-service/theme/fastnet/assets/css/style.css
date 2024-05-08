@@ -1,3 +1,31 @@
+.notification-container {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: none;
+}
+
+.notification-container.show {
+  display: block;
+}
+
+.notification-content {
+  display: flex;
+  align-items: center;
+}
+
+.notification-message {
+  flex-grow: 1;
+}
+
+.notification-cancel {
+  cursor: pointer;
+}
 /* Theme Description
 -------------------------------------------------
 
@@ -217,7 +245,11 @@ button {
 }
 
 /* line 89, C:/Users/HP/Desktop/jun-2020/278.Internet_service/assets/scss/_common.scss */
-button:focus, input:focus, input:focus, textarea, textarea:focus {
+button:focus,
+input:focus,
+input:focus,
+textarea,
+textarea:focus {
   outline: 0;
 }
 
@@ -226,9 +258,9 @@ button:focus, input:focus, input:focus, textarea, textarea:focus {
 /* line 94, C:/Users/HP/Desktop/jun-2020/278.Internet_service/assets/scss/_common.scss */
 input:focus::-moz-placeholder {
   opacity: 0;
-  -webkit-transition: .4s;
-  -o-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
 }
 
 /* line 101, C:/Users/HP/Desktop/jun-2020/278.Internet_service/assets/scss/_common.scss */
@@ -332,13 +364,15 @@ li {
 }
 
 /* line 265, C:/Users/HP/Desktop/jun-2020/278.Internet_service/assets/scss/_common.scss */
-.btn.focus, .btn:focus {
+.btn.focus,
+.btn:focus {
   outline: 0;
   box-shadow: none;
 }
 
 /* line 270, C:/Users/HP/Desktop/jun-2020/278.Internet_service/assets/scss/_common.scss */
-.btn.focus, .btn:focus {
+.btn.focus,
+.btn:focus {
   outline: 0;
   box-shadow: none;
 }
@@ -403,7 +437,7 @@ li {
 
 /* scrollUp */
 /* line 420, C:/Users/HP/Desktop/jun-2020/278.Internet_service/assets/scss/_common.scss */
- #back-top {
+#back-top {
   background: #ff3e3f;
   height: 50px;
   width: 50px;
@@ -421,13 +455,13 @@ li {
 
 @media (max-width: 575px) {
   /* line 420, C:/Users/HP/Desktop/jun-2020/278.Internet_service/assets/scss/_common.scss */
-   #back-top {
+  #back-top {
     right: 16px;
   }
 }
 
 /* line 437, C:/Users/HP/Desktop/jun-2020/278.Internet_service/assets/scss/_common.scss */
- #back-top a i {
+#back-top a i {
   display: block;
   line-height: 50px;
 }
@@ -1203,9 +1237,9 @@ li {
   right: 0;
   bottom: 0;
   z-index: 999999;
-  -webkit-transition: .6s;
-  -o-transition: .6s;
-  transition: .6s;
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
   margin: 0 auto;
 }
 
@@ -1227,9 +1261,9 @@ li {
   background-color: #fff;
   -webkit-animation: zoom 2000ms infinite ease;
   animation: zoom 2000ms infinite ease;
-  -webkit-transition: .6s;
-  -o-transition: .6s;
-  transition: .6s;
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
 }
 
 /* line 633, C:/Users/HP/Desktop/jun-2020/278.Internet_service/assets/scss/_common.scss */
@@ -1248,9 +1282,9 @@ li {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   padding-top: 6px;
-  -webkit-transition: .6s;
-  -o-transition: .6s;
-  transition: .6s;
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
 }
 
 /* line 654, C:/Users/HP/Desktop/jun-2020/278.Internet_service/assets/scss/_common.scss */
@@ -1269,16 +1303,16 @@ li {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
-    -webkit-transition: .6s;
-    -o-transition: .6s;
-    transition: .6s;
+    -webkit-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
   }
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
-    -webkit-transition: .6s;
-    -o-transition: .6s;
-    transition: .6s;
+    -webkit-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
   }
 }
 
@@ -1753,7 +1787,14 @@ li {
 }
 
 /* line 71, C:/Users/HP/Desktop/jun-2020/278.Internet_service/assets/scss/_headerMenu.scss */
-.header-area .header-top .header-info-left .header-social > ul > li > a:hover i {
+.header-area
+  .header-top
+  .header-info-left
+  .header-social
+  > ul
+  > li
+  > a:hover
+  i {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
@@ -2796,14 +2837,25 @@ li {
 }
 
 /* line 78, C:/Users/HP/Desktop/jun-2020/278.Internet_service/assets/scss/_footer.scss */
-.footer-area .footer-top .single-footer-caption .footer-form form input::placeholder {
+.footer-area
+  .footer-top
+  .single-footer-caption
+  .footer-form
+  form
+  input::placeholder {
   color: #9fa6bd;
   font-weight: 300;
   font-size: 14px;
 }
 
 /* line 85, C:/Users/HP/Desktop/jun-2020/278.Internet_service/assets/scss/_footer.scss */
-.footer-area .footer-top .single-footer-caption .footer-form form .form-icon button {
+.footer-area
+  .footer-top
+  .single-footer-caption
+  .footer-form
+  form
+  .form-icon
+  button {
   position: absolute;
   top: 0px;
   right: 0;
@@ -3080,16 +3132,17 @@ li {
 .blog_area a {
   color: "Muli", sans-serif !important;
   text-decoration: none;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 /* line 109, C:/Users/HP/Desktop/jun-2020/278.Internet_service/assets/scss/_blog_page.scss */
-.blog_area a:hover, .blog_area a :hover {
+.blog_area a:hover,
+.blog_area a :hover {
   background: -webkit-linear-gradient(131deg, #ff3e3f 0%, #ff3e3f 99%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration: none;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 /* line 119, C:/Users/HP/Desktop/jun-2020/278.Internet_service/assets/scss/_blog_page.scss */
@@ -3868,7 +3921,7 @@ li {
 
 /* line 1362, C:/Users/HP/Desktop/jun-2020/278.Internet_service/assets/scss/_blog_page.scss */
 .single-post-area .navigation-area .nav-left:hover .thumb img {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 @media (max-width: 767px) {
@@ -3914,7 +3967,7 @@ li {
 
 /* line 1397, C:/Users/HP/Desktop/jun-2020/278.Internet_service/assets/scss/_blog_page.scss */
 .single-post-area .navigation-area .nav-right:hover .thumb img {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 @media (max-width: 991px) {
@@ -4140,7 +4193,8 @@ li {
 }
 
 /* line 16, C:/Users/HP/Desktop/jun-2020/278.Internet_service/assets/scss/_contact.scss */
-.contact-info__icon i, .contact-info__icon span {
+.contact-info__icon i,
+.contact-info__icon span {
   color: #8f9195;
   font-size: 27px;
 }
@@ -4319,7 +4373,7 @@ li {
   z-index: 1042;
   overflow: hidden;
   position: fixed;
-  background: #4A3600;
+  background: #4a3600;
   opacity: 0.6;
 }
 
@@ -4402,7 +4456,7 @@ del {
   outline: none;
   line-height: 40px;
   padding: 0 30px;
-  font-size: .8em;
+  font-size: 0.8em;
   text-align: center;
   text-decoration: none;
   font-weight: 500;
@@ -5231,7 +5285,8 @@ del {
 
 /* line 766, C:/Users/HP/Desktop/jun-2020/278.Internet_service/assets/scss/_elements.scss */
 .primary-checkbox input:checked + label {
-  background: url(../img/elements/primary-check.png) no-repeat center center/cover;
+  background: url(../img/elements/primary-check.png) no-repeat center
+    center/cover;
   border: none;
 }
 
@@ -5273,7 +5328,8 @@ del {
 
 /* line 803, C:/Users/HP/Desktop/jun-2020/278.Internet_service/assets/scss/_elements.scss */
 .confirm-checkbox input:checked + label {
-  background: url(../img/elements/success-check.png) no-repeat center center/cover;
+  background: url(../img/elements/success-check.png) no-repeat center
+    center/cover;
   border: none;
 }
 
@@ -5321,7 +5377,8 @@ del {
 
 /* line 844, C:/Users/HP/Desktop/jun-2020/278.Internet_service/assets/scss/_elements.scss */
 .disabled-checkbox input:checked + label {
-  background: url(../img/elements/disabled-check.png) no-repeat center center/cover;
+  background: url(../img/elements/disabled-check.png) no-repeat center
+    center/cover;
   border: none;
 }
 
@@ -5363,7 +5420,8 @@ del {
 
 /* line 881, C:/Users/HP/Desktop/jun-2020/278.Internet_service/assets/scss/_elements.scss */
 .primary-radio input:checked + label {
-  background: url(../img/elements/primary-radio.png) no-repeat center center/cover;
+  background: url(../img/elements/primary-radio.png) no-repeat center
+    center/cover;
   border: none;
 }
 
@@ -5405,7 +5463,8 @@ del {
 
 /* line 918, C:/Users/HP/Desktop/jun-2020/278.Internet_service/assets/scss/_elements.scss */
 .confirm-radio input:checked + label {
-  background: url(../img/elements/success-radio.png) no-repeat center center/cover;
+  background: url(../img/elements/success-radio.png) no-repeat center
+    center/cover;
   border: none;
 }
 
@@ -5453,7 +5512,8 @@ del {
 
 /* line 959, C:/Users/HP/Desktop/jun-2020/278.Internet_service/assets/scss/_elements.scss */
 .disabled-radio input:checked + label {
-  background: url(../img/elements/disabled-radio.png) no-repeat center center/cover;
+  background: url(../img/elements/disabled-radio.png) no-repeat center
+    center/cover;
   border: none;
 }
 

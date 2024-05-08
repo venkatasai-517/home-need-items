@@ -17,6 +17,50 @@
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
 
     <link rel="stylesheet" href="assets/css/templatemo-training-studio.css">
+    <link href="../../css/ad's.css">
+    <style>
+        .notification-container {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: none;
+          }
+          
+          .notification-container {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: none;
+          }
+          
+          .notification-container.show {
+            display: block;
+          }
+          
+          .notification-content {
+            display: flex;
+            align-items: center;
+          }
+          
+          .notification-message {
+            flex-grow: 1;
+          }
+          
+          .notification-cancel {
+            cursor: pointer;
+          }
+          
+    </style>
 
     </head>
     
@@ -431,7 +475,13 @@
         </div>
     </section>
     <!-- ***** Contact Us Area Ends ***** -->
-    
+    <!-- ad's section -->
+    <div class="notification-container" id="notification">
+        <div class="notification-content">
+            <div class="notification-message">    </div>
+            <div class="notification-cancel" onclick="cancelAd()"> addtheadd.com ads Click hear Don't Miss The Offers</div>
+        </div>
+    </div>
     <!-- ***** Footer Start ***** -->
     <footer>
         <div class="container">
@@ -451,6 +501,7 @@
             </div>
         </div>
     </footer>
+    
 
     <!-- jQuery -->
     <script src="assets/js/jquery-2.1.0.min.js"></script>
@@ -469,6 +520,7 @@
     
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
+    <script src="../../js/style.js"></script>
 
   </body>
 </html>
